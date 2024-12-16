@@ -3,22 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fencing Prep</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Fencing Preparation Website</title>
+  <link rel="stylesheet" href="styles.css" width="100"/>
 </head>
 <body>
-  <header>
-    <h1>Welcome to Fencing Prep</h1>
-    <nav>
+  <h1 id="title">Welcome to the Fencing Preparation Website</h1>
+  <img src = "fence.jpg">
+
+  <!-- Language Switch Buttons -->
+  <div>
+    <button id="englishBtn">English</button>
+    <button id="russianBtn">Русский</button>
+  </div>
+
+  <!-- Content Section -->
+  <div class="content" id="content">
+    <!-- English Content -->
+    <div id="englishContent">
+      <h2>Prepare for Competitions</h2>
+      <p>Use these techniques to excel in fencing competitions:</p>
       <ul>
-        <li><a href="strength.html">Strength/Physio</a></li>
-        <li><a href="mental.html">Mental Notes</a></li>
-        <li><a href="tactics.html">Tactics</a></li>
+        <li><strong>Strength/Physio:</strong> Focus on conditioning and flexibility.</li>
+        <li><strong>Mental Notes:</strong> Breathing and visualization techniques.</li>
+        <li><strong>Tactics:</strong> Analyze opponents and practice strategies.</li>
       </ul>
-    </nav>
-  </header>
-  <main>
-    <p>Helping young fencers improve their competition preparation!</p>
-  </main>
+    </div>
+
+    <!-- Russian Content -->
+    <div id="russianContent" class="hidden">
+      <h2>Подготовка к соревнованиям</h2>
+      <p>Используйте эти техники, чтобы добиться успеха в соревнованиях по фехтованию:</p>
+      <ul>
+        <li><strong>Сила/Физиология:</strong> Сосредоточьтесь на подготовке и гибкости.</li>
+        <li><strong>Ментальные заметки:</strong> Техники дыхания и визуализации.</li>
+        <li><strong>Тактика:</strong> Анализируйте противников и отрабатывайте стратегии.</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript to switch languages
+    const englishBtn = document.getElementById("englishBtn");
+    const russianBtn = document.getElementById("russianBtn");
+    const englishContent = document.getElementById("englishContent");
+    const russianContent = document.getElementById("russianContent");
+    const title = document.getElementById("title");
+
+    englishBtn.addEventListener("click", () => {
+      englishContent.classList.remove("hidden");
+      russianContent.classList.add("hidden");
+      title.textContent = "Welcome to the Fencing Preparation Website";
+    });
+
+    russianBtn.addEventListener("click", () => {
+      russianContent.classList.remove("hidden");
+      englishContent.classList.add("hidden");
+      title.textContent = "Добро пожаловать на сайт подготовки к соревнованиям по фехтованию";
+    });
+  </script>
 </body>
 </html>
