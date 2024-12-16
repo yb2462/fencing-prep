@@ -1,6 +1,5 @@
 /* General Styles */
 body {
-  background-color: #45b6b4;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -8,7 +7,7 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #eed600; /* Header background color */
+  background-color: #41d4d4; /* Header background color */
   color: white;
   padding: 10px 0;
   position: fixed;
@@ -19,6 +18,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
 }
 
 /* Navigation links in header */
