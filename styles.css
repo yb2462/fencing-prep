@@ -1,34 +1,104 @@
-/* styles.css */
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-/* Hide content by default */
+/* Header Styles */
+header {
+  background-color: #eed600; /* Header background color */
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navigation links in header */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Language Switch Buttons */
+.language-buttons {
+  display: flex;
+}
+
+.language-buttons button {
+  background-color: white;
+  color: #007BFF;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.language-buttons button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Content Section */
+.content {
+  margin-top: 80px; /* To avoid overlap with fixed header */
+  padding: 20px;
+}
+
 .hidden {
   display: none;
 }
 
-/* Optional: Styling for the body */
-body {
-  background-color: lightcyan;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
+h1 {
+  font-size: 2.5em;
+  margin-top: 20px;
 }
 
-/* Styling for headings */
-h1, h2 {
-  color: #333;
-}
-
-/* Styling for images */
 img {
   width: 100%;
   max-width: 600px;
-  height: auto;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-/* Styling for buttons */
-button {
-  margin: 10px;
-  padding: 10px;
-  cursor: pointer;
+/* Mobile-Friendly */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .language-buttons {
+    margin-top: 10px;
+  }
 }
