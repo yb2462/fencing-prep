@@ -1,0 +1,33 @@
+/* styles.css */
+
+/* Hide content by default */
+.hidden {
+  display: none;
+}
+
+/* Optional: Styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Styling for headings */
+h1, h2 {
+  color: #333;
+}
+
+/* Styling for images */
+img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Styling for buttons */
+button {
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
