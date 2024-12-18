@@ -1,5 +1,6 @@
 /* General Styles */
 body {
+  background-color: antiquewhite;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -66,6 +67,8 @@ nav ul li a:hover {
 .content {
   margin-top: 80px; /* To avoid overlap with fixed header */
   padding: 20px;
+  margin-left: auto;
+  margin-right:auto;
 }
 
 .hidden {
@@ -81,7 +84,7 @@ img {
   display:block;
   width: 100%;
   max-width: 600px;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right:auto;
 }
