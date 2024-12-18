@@ -67,6 +67,7 @@ nav ul li a:hover {
 
 /* Content Section */
 .content {
+  display: block;
   margin-top: 80px; /* To avoid overlap with fixed header */
   padding: 20px;
   margin-left: auto;
@@ -110,5 +111,6 @@ img {
 
   .language-buttons {
     margin-top: 10px;
+    border-radius: 10px;
   }
 }
