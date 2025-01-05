@@ -77,7 +77,7 @@ li {
   margin-bottom: 10px;
   font-family: 'Dancing Script', cursive;
   font-size: 1.5rem;  /* Adjust the size as needed */
-  text-align: right; /* Optional: centers the quote */
+  text-align: left; /* Optional: centers the quote */
   color: white; /* Optional: set the color */
   font-weight: 400; /* Optional: adjust the weight */
 }
@@ -86,7 +86,7 @@ li {
   margin-bottom: 10px;
   font-family: 'Dancing Script', cursive;
   font-size: 1rem;
-  text-align: right;
+  text-align: left;
   font-weight: 700; /* Make the author's name bold */
   color: #f0f0f0; /* Slightly lighter color for the author */
 }
@@ -144,10 +144,8 @@ img {
   border: none; /* Remove any border */
 }
 .video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  display: none;
+  margin-top: 20px;
 }
 
 iframe {
@@ -176,4 +174,18 @@ iframe {
     margin-top: 10px;
     border-radius: 10px;
   }
+}
+
+/* Style for the button */
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #0056b3;
 }
