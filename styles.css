@@ -99,6 +99,14 @@ li {
   /* margin-left: auto;
   margin-right: auto; */
 }
+.text {
+
+    text-align: left; /* Align text inside the div to the left */
+    display: block; /* Ensure it behaves as a block element */
+    margin: 0 auto; /* Keep it horizontally centered if necessary */
+    /* width: 80%; Or set the desired width */
+
+}
 
 .hidden {
   display: none;
@@ -110,6 +118,9 @@ h1 {
   color: #FFC300; /* Gold Yellow */
 }
 
+h3{
+  color: #FFC300;
+}
 .nav-wrapper {
   display: flex;
   justify-content: center;
@@ -144,8 +155,9 @@ img {
   border: none; /* Remove any border */
 }
 .video-container {
-  display: none;
+  /* display: none; */
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 iframe {
